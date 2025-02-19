@@ -9,6 +9,6 @@
   "license": "MIT",
   "description": "",
   "dependencies": {
-    "elliptic": "6.5"
+    "elliptic": "6.6"
   }
 }
