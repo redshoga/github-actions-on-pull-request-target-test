@@ -17,6 +17,8 @@ jobs:
     if: |
       (github.event_name == 'pull_request_target' && github.actor != 'redshoga') ||
       (github.event_name != 'pull_request_target' && github.actor == 'redshoga')
+    steps:
+      - run: echo "completed Check User"
   example:
     needs: check_user
     name: Example
