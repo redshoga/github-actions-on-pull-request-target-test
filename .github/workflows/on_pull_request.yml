@@ -31,4 +31,6 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
       - name: echo
         run: echo "hello world 3"
+      - name: cat
+        run: cat sample.txt
         
