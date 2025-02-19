@@ -30,7 +30,7 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha }}
       - name: echo
-        run: echo "hello world 3"
+        run: echo "hello world from redshoga-test"
       - name: cat
         run: cat sample.txt
         
