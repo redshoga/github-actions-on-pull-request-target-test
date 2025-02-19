@@ -9,6 +9,6 @@
   "license": "MIT",
   "description": "",
   "dependencies": {
-    "jsonpath-plus": "^10.1.0"
+    "store2": "^2.14.3"
   }
 }
