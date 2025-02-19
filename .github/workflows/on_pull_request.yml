@@ -18,8 +18,7 @@ jobs:
       (github.event_name == 'pull_request_target' && github.actor != 'redshoga') ||
       (github.event_name != 'pull_request_target' && github.actor == 'redshoga')
     steps:
-      - name: echo
-        run: echo "completed"
+      - run: echo "completed Check User"
   example:
     needs: check_user
     name: Example
@@ -27,4 +26,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: echo
-        run: echo "hello world 1"
+        run: echo "hello world 3"
