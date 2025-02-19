@@ -1,0 +1,16 @@
+name: On Pull Request
+
+env:
+  TZ: Asia/Tokyo
+
+on:
+  pull_request:
+
+jobs:
+  example:
+    name: Example
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@
+      - name: echo
+        run: echo "hello world"
