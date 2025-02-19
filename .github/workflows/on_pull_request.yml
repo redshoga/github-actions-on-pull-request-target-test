@@ -16,7 +16,7 @@ jobs:
     # https://engineering.mobalab.net/2021/04/30/make-secrets-available-in-pull-request-opened-by-dependabot/
     if: |
       (github.event_name == 'pull_request_target' && github.actor != 'redshoga') ||
-      (github.event_name != 'pull_request_target' && github.actor == 'redshoga'')
+      (github.event_name != 'pull_request_target' && github.actor == 'redshoga')
     steps:
       - name: echo
         run: echo "completed"
