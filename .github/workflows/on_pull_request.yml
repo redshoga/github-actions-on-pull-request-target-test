@@ -11,6 +11,6 @@ jobs:
     name: Example
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@
+      - uses: actions/checkout@v4
       - name: echo
-        run: echo "hello world"
+        run: echo "hello world 1"
