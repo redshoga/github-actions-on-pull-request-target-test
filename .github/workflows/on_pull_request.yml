@@ -24,6 +24,11 @@ jobs:
     name: Example
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout (on pull_request_target)
+        uses: actions/checkout@v4
+        # pull_request_target 駆動の場合は HEAD コミットを明示的に指定する必要があるため
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
       - name: echo
         run: echo "hello world 3"
+        
