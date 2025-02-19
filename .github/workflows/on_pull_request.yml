@@ -24,7 +24,7 @@ jobs:
     name: Example
     runs-on: ubuntu-22.04
     steps:
-      - name: Checkout (on pull_request_target)
+      - name: Checkout
         uses: actions/checkout@v4
         # pull_request_target 駆動の場合は HEAD コミットを明示的に指定する必要があるため
         with:
