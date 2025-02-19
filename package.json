@@ -9,6 +9,6 @@
   "license": "MIT",
   "description": "",
   "dependencies": {
-    "store2": "^2.14.3"
+    "elliptic": "6.5"
   }
 }
