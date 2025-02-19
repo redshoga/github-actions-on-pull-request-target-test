@@ -8,19 +8,19 @@ on:
   pull_request_target:
 
 jobs:
-  check_user:
-    name: Check User
-    runs-on: ubuntu-22.04
-    # dependabotならpull_request_target以外を無視
-    # dependabot以外ならpull_request_targetを無視
-    # https://engineering.mobalab.net/2021/04/30/make-secrets-available-in-pull-request-opened-by-dependabot/
-    if: |
-      (github.event_name == 'pull_request_target' && github.actor != 'redshoga') ||
-      (github.event_name != 'pull_request_target' && github.actor == 'redshoga')
-    steps:
-      - run: echo "completed Check User"
+  # check_user:
+  #   name: Check User
+  #   runs-on: ubuntu-22.04
+  #   # dependabotならpull_request_target以外を無視
+  #   # dependabot以外ならpull_request_targetを無視
+  #   # https://engineering.mobalab.net/2021/04/30/make-secrets-available-in-pull-request-opened-by-dependabot/
+  #   if: |
+  #     (github.event_name == 'pull_request_target' && github.actor != 'redshoga') ||
+  #     (github.event_name != 'pull_request_target' && github.actor == 'redshoga')
+  #   steps:
+  #     - run: echo "completed Check User"
   example:
-    needs: check_user
+    # needs: check_user
     name: Example
     runs-on: ubuntu-22.04
     steps:
